@@ -1,0 +1,22 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Vercel / deploy
+.vercel/
+
+# Node (caso rode npx serve localmente)
+node_modules/
+npm-debug.log*
+
+# Diversos
+*.log
+tmp/
