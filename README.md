@@ -1,10 +1,15 @@
 # Minicurso: Terminal Linux e Shell Script — apresentação de slides
 
 Site estático de slides (HTML + CSS + JavaScript puros, sem framework, sem backend,
-sem requisições externas) construído a partir de `spec.md`.
+sem requisições externas), construído a partir de `spec.md` com os ajustes de
+`modificacoes.md`.
 
-- **Público:** aula presencial de 3h30 (Sistemas de Informação · UECE) + link para os participantes.
-- **Conteúdo:** a fonte de verdade é `spec.md` (seção 7). Os textos dos slides são os da especificação.
+- **Formato:** apresentação única de **1h30**, sem divisão em módulos e sem tempos
+  estimados por atividade.
+- **Total:** **27 slides** (capa → encerramento).
+- **Público:** Sistemas de Informação · UECE.
+- **Conteúdo:** texto dos slides conforme a seção 7 da spec, com as remoções e
+  reformulações pedidas em `modificacoes.md`.
 
 ---
 
@@ -38,8 +43,6 @@ Abrir `http://localhost:3000` (ou `:8000`). Não há build: basta servir a pasta
 | `Shift + →` | mostrar todos os passos do slide |
 | `←` · `PageUp` | voltar (desfaz o último passo) |
 | `Home` / `End` | primeiro / último slide |
-| `T` / `R` | cronômetro regressivo: iniciar/pausar / reiniciar (slides com `data-timer`) |
-| `E` / `C` / `B` | Cartão de erros (A1) · Cola de comandos (A2) · voltar ao slide de origem |
 | `F` | tela cheia |
 | `N` | notas do instrutor (painel discreto na base) |
 | `O` | visão geral (grade de miniaturas) |
@@ -51,42 +54,39 @@ Links por slide: `#/12` abre o slide 12.
 ## Placeholders
 
 Nenhum placeholder pendente: instrutores preenchidos (**Daniel · Gustavo · Silvio**),
-data da aula e formulário de feedback removidos a pedido dos instrutores
-(o slide S50 ficou apenas com as perguntas para coleta verbal).
+data da aula e formulário de feedback removidos a pedido dos instrutores.
 
 ## Estrutura
 
 ```
 index.html        todos os slides (<section class="slide">)
 css/style.css     tema, layouts, componentes, impressão
-js/deck.js        navegação, passos, cronômetro, atalhos
+js/deck.js        navegação, passos, atalhos
 assets/fonts/     JetBrains Mono (400/700) + Inter latin (400/600), .woff2 + licenças (OFL)
 assets/favicon.svg
 vercel.json
 ```
 
-## Decisões e dúvidas registradas
+## O que mudou em relação à spec original (`modificacoes.md`)
 
-1. **54 slides em vez de 53:** a Cola de comandos foi dividida em **A2 (8 linhas) e A3 (7 linhas
-   + faixa final)**, opção prevista na própria spec (seção A2), porque as 15 linhas não caberiam
-   respeitando o mínimo de 28 px no palco 1920×1080. O total passou de 53 para 54.
-2. **Fonte de S44 em 28 px (spec pedia 34 px):** a janela de 21 linhas com fonte 34 px excede a
-   altura do palco; foi usado o piso de 28 px da spec (seção 5.3) para o esqueleto ficar inteiro
-   visível, sem rolagem. **S46 (solução)** mantém 32 px com `overflow-y: auto`, como a spec indica.
-3. **Glifos `→`, `←`, `⚠`, `⏱`:** o subconjunto das fontes não os cobre; são **SVG inline**
-   (próprios, no repositório), conforme previsto na seção 5.3. A JetBrains Mono usada é a versão
-   completa (oficial da JetBrains), que inclui box-drawing (`├ └ │ ─`) usado nas árvores.
-4. **Chamadas anotadas (S08):** implementadas como etiquetas com seta ao lado do terminal
-   (posicionamento CSS simples, sem bibliotecas), conforme autorizado na spec (item 5.4.7).
-5. **Cronômetro:** disponível nos slides com `data-timer` (S10, S16, S22, S23, S27, S36, S40, S43);
-   no slide de intervalo (S23) ele aparece gigante, no centro, ao pressionar `T`.
-6. **Lighthouse:** recomendação da spec (Performance/Acessibility/Best Practices ≥ 95). Rodar
-   após o deploy (DevTools → Lighthouse, categoria desktop). Nenhum recurso externo é carregado.
+1. **Atividade "caça ao tesouro" removida** (slide 16 da versão anterior).
+2. **Atividades de scripts de bagunça/organização removidas** (slides 22, 27 e o bloco 37–47).
+3. **Sem módulos:** slides de abertura de módulo (M1–M7), plano da aula e intervalo removidos.
+   A apresentação é uma sequência única de 27 slides para 1h30.
+4. **Sem tempo estimado por tarefa:** removidos os badges `⏱ N min` e todos os `data-timer`.
+   Os slides de prática mantêm apenas o selo **SUA VEZ**.
+5. **Slide "Sua vez: scripts" reformulado:** o Desafio B foi removido e o antigo Desafio A
+   virou o único exercício ("Meu cartão"), agora usando **dois parâmetros** (`$1` nome, `$2` curso).
+6. **Slide "O que você aprendeu" reformulado:** lista apenas o conteúdo mantido
+   (comandos, `>`/`>>`, variáveis, `$1`/`$2` e script); `for`/curinga saíram.
+7. **Apêndices removidos** (cartão de erros e cola de comandos), junto com os atalhos `E`/`C`/`B`.
+8. **Exemplos ajustados ao conteúdo restante:** a árvore de pastas mostra `faculdade/` (em vez de
+   `caca/`) e o exemplo de `Tab` usa `cd fac<Tab>` → `cd faculdade/`.
+9. Textos mantidos seguem literalmente a spec original (acentos, aspas e comandos intactos).
 
 ## Verificação rápida antes de publicar
 
-- [ ] Abrir localmente e percorrer todos os slides (`End` vai ao último).
-- [ ] `#/1`, `#/12`, `#/54` abrem os slides corretos.
+- [ ] Abrir localmente e percorrer todos os slides (`End` vai ao último: `27 / 27`).
+- [ ] `#/1`, `#/12`, `#/27` abrem os slides corretos.
 - [ ] Passos: `→` revela um a um; `Shift + →` revela tudo; `←` desfaz.
-- [ ] `T` no slide de intervalo inicia a contagem (cores em 5 min e 1 min).
 - [ ] `Ctrl+P`: pré-visualizar a impressão (1 slide por página, tema claro).

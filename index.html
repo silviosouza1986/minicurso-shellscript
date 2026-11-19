@@ -43,54 +43,8 @@
   </div>
 </section>
 
-<!-- ==================== S02 · O que vamos construir ==================== -->
-<section class="slide" id="s02" data-layout="split" data-notes="Executar ao vivo o script (demo-gancho) antes ou durante este slide.">
-  <h2 class="slide-title">Ao final da aula, você vai escrever isto</h2>
-  <div class="split c2">
-    <div class="step">
-      <div class="term t30">
-        <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">antes</span></div>
-        <pre class="term-body"><span class="p">$</span> ls bagunca
-<span class="out">foto1.jpg  foto2.png  notas.txt  programa.py  resumo.pdf  selfie.jpg  trabalho.pdf</span></pre>
-      </div>
-    </div>
-    <div class="step">
-      <div class="term t30">
-        <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">depois</span></div>
-        <pre class="term-body"><span class="p">$</span> ./organizar.sh bagunca
-<span class="out">Pasta 'bagunca' organizada!</span>
-<span class="p">$</span> ls bagunca
-<span class="out">codigos  documentos  imagens</span></pre>
-      </div>
-    </div>
-  </div>
-  <p class="caption">Um script que arruma uma pasta bagunçada sozinho.</p>
-</section>
-
-<!-- ==================== S03 · Plano da aula ==================== -->
-<section class="slide" id="s03" data-layout="table">
-  <h2 class="slide-title">Plano da aula</h2>
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>Início</th><th>Bloco</th><th>Duração</th></tr></thead>
-      <tbody>
-        <tr><td>0:10</td><td>M1 · O que é o terminal?</td><td>15 min</td></tr>
-        <tr><td>0:25</td><td>M2 · Onde estou? Navegando pelas pastas</td><td>30 min</td></tr>
-        <tr><td>0:55</td><td>M3 · Criando e organizando pastas e arquivos</td><td>30 min</td></tr>
-        <tr><td>1:25</td><td>Intervalo</td><td>10 min</td></tr>
-        <tr><td>1:35</td><td>M4 · Escrevendo e lendo texto</td><td>20 min</td></tr>
-        <tr><td>1:55</td><td>M5 · Seu primeiro script</td><td>35 min</td></tr>
-        <tr><td>2:30</td><td>M6 · Repetindo tarefas com for</td><td>20 min</td></tr>
-        <tr><td>2:50</td><td>M7 · Exercício final: organizador de pasta</td><td>30 min</td></tr>
-        <tr><td>3:20</td><td>Encerramento</td><td>10 min</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="caption">Mais da metade do tempo é você praticando.</p>
-</section>
-
-<!-- ==================== S04 · Regras de ouro ==================== -->
-<section class="slide" id="s04" data-layout="cards">
+<!-- ==================== S02 · Regras de ouro ==================== -->
+<section class="slide" id="s02" data-layout="cards">
   <h2 class="slide-title">4 regras de ouro do terminal</h2>
   <div class="cards c4">
     <div class="card step"><h3>Enter executa</h3><p>O comando só roda quando você aperta Enter.</p></div>
@@ -101,18 +55,8 @@
   <p class="footnote">Travou? Levante o post-it. Os instrutores de apoio vão até você.</p>
 </section>
 
-<!-- ==================== S05 · Módulo 1 ==================== -->
-<section class="slide" id="s05" data-layout="section">
-  <div class="sec">
-    <p class="sec-prompt"><span class="p">$</span> cd modulo-1</p>
-    <div class="sec-num" aria-hidden="true">M1</div>
-    <h2 class="sec-title">O que é o terminal?</h2>
-    <span class="sec-dur">15 min</span>
-  </div>
-</section>
-
-<!-- ==================== S06 · Terminal, shell e Bash ==================== -->
-<section class="slide" id="s06" data-layout="cards">
+<!-- ==================== S03 · Terminal, shell e Bash ==================== -->
+<section class="slide" id="s03" data-layout="cards">
   <h2 class="slide-title">Terminal, shell e Bash</h2>
   <div class="cards c3">
     <div class="card step"><h3>Terminal</h3><p>A janela onde você digita os comandos.</p></div>
@@ -122,8 +66,8 @@
   <p class="highlight step">É como conversar com o computador por texto.</p>
 </section>
 
-<!-- ==================== S07 · Por que aprender? ==================== -->
-<section class="slide" id="s07" data-layout="bullets">
+<!-- ==================== S04 · Por que aprender? ==================== -->
+<section class="slide" id="s04" data-layout="bullets">
   <h2 class="slide-title">Por que aprender o terminal?</h2>
   <ul class="bl">
     <li class="step">Servidores, nuvem e desenvolvimento de software usam Linux.</li>
@@ -132,8 +76,8 @@
   </ul>
 </section>
 
-<!-- ==================== S08 · Anatomia do prompt ==================== -->
-<section class="slide" id="s08" data-layout="split">
+<!-- ==================== S05 · Anatomia do prompt ==================== -->
+<section class="slide" id="s05" data-layout="split">
   <h2 class="slide-title">Como ler o prompt</h2>
   <div class="split w62">
     <div class="term">
@@ -150,8 +94,8 @@
   <p class="caption">Você digita depois do $.</p>
 </section>
 
-<!-- ==================== S09 · Seu primeiro comando ==================== -->
-<section class="slide" id="s09" data-layout="terminal">
+<!-- ==================== S06 · Seu primeiro comando ==================== -->
+<section class="slide" id="s06" data-layout="terminal">
   <h2 class="slide-title">Seu primeiro comando: echo</h2>
   <div class="term">
     <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">terminal</span></div>
@@ -165,9 +109,9 @@
   <p class="caption">echo escreve um texto na tela.</p>
 </section>
 
-<!-- ==================== S10 · Sua vez: três echo ==================== -->
-<section class="slide" id="s10" data-layout="task" data-timer="4">
-  <div class="badge-task">SUA VEZ<svg aria-hidden="true"><use href="#i-clock"/></svg>4 min</div>
+<!-- ==================== S07 · Sua vez: três echo ==================== -->
+<section class="slide" id="s07" data-layout="task">
+  <div class="badge-task">SUA VEZ</div>
   <div class="task-grid">
     <div>
       <h2 class="slide-title">Digite três comandos echo com mensagens suas:</h2>
@@ -188,18 +132,8 @@
   </div>
 </section>
 
-<!-- ==================== S11 · Módulo 2 ==================== -->
-<section class="slide" id="s11" data-layout="section">
-  <div class="sec">
-    <p class="sec-prompt"><span class="p">$</span> cd modulo-2</p>
-    <div class="sec-num" aria-hidden="true">M2</div>
-    <h2 class="sec-title">Onde estou? Navegando pelas pastas</h2>
-    <span class="sec-dur">30 min</span>
-  </div>
-</section>
-
-<!-- ==================== S12 · Pense em um prédio ==================== -->
-<section class="slide" id="s12" data-layout="cards">
+<!-- ==================== S08 · Pense em um prédio ==================== -->
+<section class="slide" id="s08" data-layout="cards">
   <h2 class="slide-title">Pense em um prédio</h2>
   <div class="cards c3">
     <div class="card step"><h3>pwd</h3><p>Em que sala estou?</p></div>
@@ -209,8 +143,8 @@
   <p class="caption">As "salas" são as pastas do computador.</p>
 </section>
 
-<!-- ==================== S13 · A árvore de pastas ==================== -->
-<section class="slide" id="s13" data-layout="split">
+<!-- ==================== S09 · A árvore de pastas ==================== -->
+<section class="slide" id="s09" data-layout="split">
   <h2 class="slide-title">As pastas formam uma árvore</h2>
   <div class="split w62">
     <div class="term">
@@ -219,7 +153,7 @@
 ├── <span class="dir">home/</span>
 │   └── <span class="dir">aluno/</span>         <span class="cmt"><svg class="ar ar-l" aria-hidden="true"><use href="#i-ar"/></svg> ~ (sua pasta pessoal)</span>
 │       ├── <span class="dir">Documentos/</span>
-│       └── <span class="dir">caca/</span>
+│       └── <span class="dir">faculdade/</span>
 └── <span class="dir">usr/</span></pre>
     </div>
     <div class="callouts">
@@ -230,8 +164,8 @@
   </div>
 </section>
 
-<!-- ==================== S14 · Os comandos de navegação ==================== -->
-<section class="slide" id="s14" data-layout="terminal" data-notes="Demonstrar ao vivo no terminal; este slide é a referência escrita.">
+<!-- ==================== S10 · Os comandos de navegação ==================== -->
+<section class="slide" id="s10" data-layout="terminal" data-notes="Demonstrar ao vivo no terminal; este slide é a referência escrita.">
   <h2 class="slide-title">pwd, ls e cd</h2>
   <div class="term">
     <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">terminal</span></div>
@@ -244,8 +178,8 @@
   </div>
 </section>
 
-<!-- ==================== S15 · Tab e seta para cima ==================== -->
-<section class="slide" id="s15" data-layout="cards">
+<!-- ==================== S11 · Tab e seta para cima ==================== -->
+<section class="slide" id="s11" data-layout="cards">
   <h2 class="slide-title">Dois atalhos que salvam sua vida</h2>
   <div class="cards c2">
     <div class="card step"><h3><span class="key">Tab</span></h3><p>Completa o nome para você. Digite as primeiras letras e aperte Tab.</p></div>
@@ -253,37 +187,13 @@
   </div>
   <div class="term">
     <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">exemplo</span></div>
-    <pre class="term-body"><span class="step"><span class="p">$</span> cd cac<span class="cmt">&lt;Tab&gt;</span></span>
-<span class="step"><span class="p">$</span> cd caca/</span></pre>
+    <pre class="term-body"><span class="step"><span class="p">$</span> cd fac<span class="cmt">&lt;Tab&gt;</span></span>
+<span class="step"><span class="p">$</span> cd faculdade/</span></pre>
   </div>
 </section>
 
-<!-- ==================== S16 · Sua vez: caça ao tesouro ==================== -->
-<section class="slide" id="s16" data-layout="task" data-timer="18" data-notes="Antes: rodar `preparar_caca.sh` nas máquinas. Resposta: `/home/<usuario>/caca/biblioteca/sala3/estante_azul/tesouro`.">
-  <div class="badge-task">SUA VEZ<svg aria-hidden="true"><use href="#i-clock"/></svg>18 min</div>
-  <h2 class="slide-title">Caça ao tesouro</h2>
-  <ol class="num sm">
-    <li>Vá até a pasta <span class="ic">caca</span> dentro da sua pasta pessoal.</li>
-    <li>Usando só <span class="ic">ls</span> e <span class="ic">cd</span>, encontre a pasta chamada <span class="ic">tesouro</span>.</li>
-    <li>Ao chegar, digite <span class="ic">pwd</span> e anote o caminho completo.</li>
-    <li>Volte à pasta pessoal com um único comando.</li>
-    <li>Refaça o caminho até o tesouro com um único <span class="ic">cd</span>, usando Tab.</li>
-  </ol>
-  <p class="footnote-muted">Dica: se você se perder, digite <span class="ic">pwd</span>.</p>
-</section>
-
-<!-- ==================== S17 · Módulo 3 ==================== -->
-<section class="slide" id="s17" data-layout="section">
-  <div class="sec">
-    <p class="sec-prompt"><span class="p">$</span> cd modulo-3</p>
-    <div class="sec-num" aria-hidden="true">M3</div>
-    <h2 class="sec-title">Criando e organizando pastas e arquivos</h2>
-    <span class="sec-dur">30 min</span>
-  </div>
-</section>
-
-<!-- ==================== S18 · Os quatro comandos ==================== -->
-<section class="slide" id="s18" data-layout="table">
+<!-- ==================== S12 · Os quatro comandos ==================== -->
+<section class="slide" id="s12" data-layout="table">
   <h2 class="slide-title">Criar, mover e apagar</h2>
   <div class="tbl-wrap">
     <table class="tbl-lg">
@@ -298,8 +208,8 @@
   </div>
 </section>
 
-<!-- ==================== S19 · mv move e renomeia ==================== -->
-<section class="slide" id="s19" data-layout="terminal">
+<!-- ==================== S13 · mv move e renomeia ==================== -->
+<section class="slide" id="s13" data-layout="terminal">
   <h2 class="slide-title">mv: mover e renomear</h2>
   <div class="term">
     <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">terminal</span></div>
@@ -309,8 +219,8 @@
   <p class="caption">Renomear é só mover para outro nome.</p>
 </section>
 
-<!-- ==================== S20 · Aviso: sem lixeira ==================== -->
-<section class="slide" id="s20" data-layout="warning">
+<!-- ==================== S14 · Aviso: sem lixeira ==================== -->
+<section class="slide" id="s14" data-layout="warning">
   <div class="warn-hero">
     <svg class="ic-warn" aria-hidden="true"><use href="#i-warn"/></svg>
     <h2>Não existe lixeira no terminal</h2>
@@ -322,8 +232,8 @@
   </div>
 </section>
 
-<!-- ==================== S21 · Demonstração: pasta de disciplina ==================== -->
-<section class="slide" id="s21" data-layout="terminal" data-notes="Rodar `ls` depois de cada comando que modifica algo.">
+<!-- ==================== S15 · Demonstração: pasta de disciplina ==================== -->
+<section class="slide" id="s15" data-layout="terminal" data-notes="Rodar `ls` depois de cada comando que modifica algo.">
   <h2 class="slide-title">Montando a pasta de uma disciplina</h2>
   <div class="term">
     <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">terminal</span></div>
@@ -342,57 +252,8 @@
   </div>
 </section>
 
-<!-- ==================== S22 · Sua vez: pasta de projeto ==================== -->
-<section class="slide" id="s22" data-layout="task" data-timer="18">
-  <div class="badge-task">SUA VEZ<svg aria-hidden="true"><use href="#i-clock"/></svg>18 min</div>
-  <div class="task-grid">
-    <div>
-      <h2 class="slide-title">Pasta de projeto (dentro de ~/faculdade)</h2>
-      <p style="font-size:34px;color:var(--muted);margin:0 0 10px">Confira cada passo com <span class="ic">ls</span>.</p>
-      <ol class="num sm">
-        <li>Crie as pastas <span class="ic">projeto</span>, <span class="ic">docs</span> e <span class="ic">imagens</span>.</li>
-        <li>Crie os arquivos <span class="ic">ideia.txt</span>, <span class="ic">requisitos.txt</span> e <span class="ic">logo.png</span>.</li>
-        <li>Mova <span class="ic">ideia.txt</span> e <span class="ic">requisitos.txt</span> para <span class="ic">docs</span>.</li>
-        <li>Mova <span class="ic">logo.png</span> para <span class="ic">imagens</span>.</li>
-        <li>Renomeie <span class="ic">requisitos.txt</span> (dentro de <span class="ic">docs</span>) para <span class="ic">requisitos_v1.txt</span>.</li>
-        <li>Apague <span class="ic">ideia.txt</span>.</li>
-        <li>Mova as pastas <span class="ic">docs</span> e <span class="ic">imagens</span> para dentro de <span class="ic">projeto</span>.</li>
-      </ol>
-    </div>
-    <div class="task-side">
-      <div class="term">
-        <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">resultado final</span></div>
-        <pre class="term-body t30"><span class="dir">projeto/</span>
-├── <span class="dir">docs/</span>
-│   └── requisitos_v1.txt
-└── <span class="dir">imagens/</span>
-    └── logo.png</pre>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== S23 · Intervalo ==================== -->
-<section class="slide" id="s23" data-layout="break" data-timer="10" data-notes="Pressionar `T` ao entrar neste slide para iniciar a contagem.">
-  <div class="break-c">
-    <h2>Intervalo</h2>
-    <p class="break-min">10 minutos</p>
-    <p class="break-sub">Volte com o terminal aberto.</p>
-  </div>
-</section>
-
-<!-- ==================== S24 · Módulo 4 ==================== -->
-<section class="slide" id="s24" data-layout="section">
-  <div class="sec">
-    <p class="sec-prompt"><span class="p">$</span> cd modulo-4</p>
-    <div class="sec-num" aria-hidden="true">M4</div>
-    <h2 class="sec-title">Escrevendo e lendo texto</h2>
-    <span class="sec-dur">20 min</span>
-  </div>
-</section>
-
-<!-- ==================== S25 · &gt; e &gt;&gt; ==================== -->
-<section class="slide" id="s25" data-layout="cards">
+<!-- ==================== S16 · &gt; e &gt;&gt; ==================== -->
+<section class="slide" id="s16" data-layout="cards">
   <h2 class="slide-title">Do comando para o arquivo</h2>
   <div class="cards c3">
     <div class="card step"><h3>&gt;</h3><p>Grava o texto no arquivo. Se o arquivo já existir, apaga o que havia antes.</p><span class="card-ex">echo "Olá" &gt; a.txt</span><span class="card-warn">Cuidado com o &gt;</span></div>
@@ -401,8 +262,8 @@
   </div>
 </section>
 
-<!-- ==================== S26 · Demonstração: diário ==================== -->
-<section class="slide" id="s26" data-layout="terminal">
+<!-- ==================== S17 · Demonstração: diário ==================== -->
+<section class="slide" id="s17" data-layout="terminal">
   <h2 class="slide-title">Criando e lendo um arquivo</h2>
   <div class="term">
     <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">terminal</span></div>
@@ -420,30 +281,8 @@
   <p class="caption step">O &gt; apagou as linhas antigas!</p>
 </section>
 
-<!-- ==================== S27 · Sua vez: diário de estudos ==================== -->
-<section class="slide" id="s27" data-layout="task" data-timer="12">
-  <div class="badge-task">SUA VEZ<svg aria-hidden="true"><use href="#i-clock"/></svg>12 min</div>
-  <h2 class="slide-title">Diário de estudos</h2>
-  <ol class="num">
-    <li>Crie <span class="ic">estudos.txt</span> com 3 linhas no formato "disciplina - o que estudei". Use <span class="ic">&gt;</span> na primeira e <span class="ic">&gt;&gt;</span> nas outras.</li>
-    <li>Mostre o arquivo com <span class="ic">cat</span>.</li>
-    <li>Acrescente uma quarta linha.</li>
-    <li>Teste: rode <span class="ic">echo "apaguei tudo" &gt; estudos.txt</span> e depois <span class="ic">cat</span>. O que aconteceu? Explique para o colega.</li>
-  </ol>
-</section>
-
-<!-- ==================== S28 · Módulo 5 ==================== -->
-<section class="slide" id="s28" data-layout="section">
-  <div class="sec">
-    <p class="sec-prompt"><span class="p">$</span> cd modulo-5</p>
-    <div class="sec-num" aria-hidden="true">M5</div>
-    <h2 class="sec-title">Seu primeiro script</h2>
-    <span class="sec-dur">35 min</span>
-  </div>
-</section>
-
-<!-- ==================== S29 · Script é uma receita ==================== -->
-<section class="slide" id="s29" data-layout="cards">
+<!-- ==================== S18 · Script é uma receita ==================== -->
+<section class="slide" id="s18" data-layout="cards">
   <h2 class="slide-title">Um script é uma receita</h2>
   <div class="flow">
     <div class="card step"><span class="card-n" aria-hidden="true">1</span><h3>Escrever</h3><p>Um arquivo de texto com comandos, um por linha.</p></div>
@@ -455,8 +294,8 @@
   <p class="caption">O computador executa os comandos na ordem, sem você digitar de novo.</p>
 </section>
 
-<!-- ==================== S30 · Passo a passo ==================== -->
-<section class="slide" id="s30" data-layout="terminal">
+<!-- ==================== S19 · Passo a passo ==================== -->
+<section class="slide" id="s19" data-layout="terminal">
   <h2 class="slide-title">Do zero ao script rodando</h2>
   <div class="term">
     <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">terminal</span></div>
@@ -466,8 +305,8 @@
   </div>
 </section>
 
-<!-- ==================== S31 · Atalhos do nano ==================== -->
-<section class="slide" id="s31" data-layout="cards">
+<!-- ==================== S20 · Atalhos do nano ==================== -->
+<section class="slide" id="s20" data-layout="cards">
   <h2 class="slide-title">Editor nano: só dois atalhos</h2>
   <div class="cards c2">
     <div class="card"><h3><span class="key">Ctrl</span> + <span class="key">O</span>, depois <span class="key">Enter</span></h3><p>Salvar</p></div>
@@ -476,8 +315,8 @@
   <p class="footnote-muted">Prefere outro editor? Pode usar o editor de texto do sistema ou o VS Code.</p>
 </section>
 
-<!-- ==================== S32 · O script ola.sh ==================== -->
-<section class="slide" id="s32" data-layout="split">
+<!-- ==================== S21 · O script ola.sh ==================== -->
+<section class="slide" id="s21" data-layout="split">
   <h2 class="slide-title">ola.sh</h2>
   <div class="split w62">
     <div class="term">
@@ -499,8 +338,8 @@ echo <span class="str">"Bem-vindo(a) ao curso de <span class="vr">$curso</span>"
   </div>
 </section>
 
-<!-- ==================== S33 · Permission denied ==================== -->
-<section class="slide" id="s33" data-layout="terminal">
+<!-- ==================== S22 · Permission denied ==================== -->
+<section class="slide" id="s22" data-layout="terminal">
   <h2 class="slide-title">Rodando o ola.sh</h2>
   <div class="term">
     <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">terminal</span></div>
@@ -514,8 +353,8 @@ echo <span class="str">"Bem-vindo(a) ao curso de <span class="vr">$curso</span>"
   </div>
 </section>
 
-<!-- ==================== S34 · Variáveis ==================== -->
-<section class="slide" id="s34" data-layout="split">
+<!-- ==================== S23 · Variáveis ==================== -->
+<section class="slide" id="s23" data-layout="split">
   <h2 class="slide-title">Variáveis: caixas com etiqueta</h2>
   <div class="split c2">
     <div class="vsplit">
@@ -543,8 +382,8 @@ echo <span class="str">"Olá, <span class="vr">$nome</span>"</span>
   </div>
 </section>
 
-<!-- ==================== S35 · Argumentos ==================== -->
-<section class="slide" id="s35" data-layout="split">
+<!-- ==================== S24 · Argumentos ==================== -->
+<section class="slide" id="s24" data-layout="split">
   <h2 class="slide-title">Argumentos: $1 e $2</h2>
   <div class="split c2">
     <div class="step">
@@ -575,263 +414,28 @@ echo <span class="str">"Bem-vindo(a) a <span class="vr">$curso</span>."</span></
   </div>
 </section>
 
-<!-- ==================== S36 · Sua vez: scripts ==================== -->
-<section class="slide" id="s36" data-layout="task" data-timer="20">
-  <div class="badge-task">SUA VEZ<svg aria-hidden="true"><use href="#i-clock"/></svg>20 min</div>
+<!-- ==================== S25 · Sua vez: cartão com parâmetros ==================== -->
+<section class="slide" id="s25" data-layout="task">
+  <div class="badge-task">SUA VEZ</div>
   <div class="vsplit">
-    <h3 class="desafio">Desafio A (8 min): Meu cartão</h3>
-    <p style="font-size:38px">Crie <span class="ic">cartao.sh</span> com seu nome, curso e cidade em três variáveis e mostre um cartão com echo. Deixe-o executável e rode.</p>
-    <h3 class="desafio">Desafio B (12 min): Criar projeto</h3>
-    <p style="font-size:38px">Crie <span class="ic">criar_projeto.sh</span>. Ele recebe o nome de um projeto em <span class="ic">$1</span>, cria a pasta com as subpastas <span class="ic">docs</span> e <span class="ic">src</span> e mostra o conteúdo com <span class="ic">ls</span>.</p>
-    <p class="mono-line">Teste com: <span class="ic">./criar_projeto.sh meu_app</span></p>
+    <h2 class="slide-title">Meu cartão</h2>
+    <p style="font-size:38px">Crie <span class="ic">cartao.sh</span>. Ele recebe seu nome em <span class="ic">$1</span> e seu curso em <span class="ic">$2</span>, guarda os dois em variáveis e mostra um cartão com <span class="ic">echo</span>. Deixe-o executável e rode:</p>
+    <p class="mono-line"><span class="ic">./cartao.sh Maria "Sistemas de Informação"</span></p>
   </div>
 </section>
 
-<!-- ==================== S37 · Módulo 6 ==================== -->
-<section class="slide" id="s37" data-layout="section">
-  <div class="sec">
-    <p class="sec-prompt"><span class="p">$</span> cd modulo-6</p>
-    <div class="sec-num" aria-hidden="true">M6</div>
-    <h2 class="sec-title">Repetindo tarefas com for</h2>
-    <span class="sec-dur">20 min</span>
-  </div>
-</section>
-
-<!-- ==================== S38 · O laço for ==================== -->
-<section class="slide" id="s38" data-layout="split">
-  <h2 class="slide-title">for = "para cada..."</h2>
-  <div class="split w62">
-    <div class="vsplit">
-      <div class="step">
-        <div class="term">
-          <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">turma.sh</span></div>
-          <pre class="term-body"><span class="sheb">#!/bin/bash</span>
-<span class="kw">for</span> disciplina <span class="kw">in</span> BD SO Redes; <span class="kw">do</span>
-    mkdir -p <span class="str">"faculdade/<span class="vr">$disciplina</span>"</span>
-    echo <span class="str">"Pasta criada: <span class="vr">$disciplina</span>"</span>
-<span class="kw">done</span></pre>
-        </div>
-      </div>
-      <div class="callouts">
-        <div class="an step"><span class="an-code"><span class="kw">for</span> disciplina</span><svg class="ar" aria-hidden="true"><use href="#i-ar"/></svg><span class="an-def">a variável que muda a cada volta</span></div>
-        <div class="an step"><span class="an-code"><span class="kw">in</span> BD SO Redes</span><svg class="ar" aria-hidden="true"><use href="#i-ar"/></svg><span class="an-def">a lista de itens</span></div>
-        <div class="an step"><span class="an-code"><span class="kw">do</span> ... <span class="kw">done</span></span><svg class="ar" aria-hidden="true"><use href="#i-ar"/></svg><span class="an-def">o que repetir</span></div>
-      </div>
-    </div>
-    <div class="step">
-      <div class="term">
-        <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">terminal</span></div>
-        <pre class="term-body"><span class="p">$</span> ./turma.sh
-<span class="out">Pasta criada: BD</span>
-<span class="out">Pasta criada: SO</span>
-<span class="out">Pasta criada: Redes</span></pre>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== S39 · O curinga * ==================== -->
-<section class="slide" id="s39" data-layout="split">
-  <h2 class="slide-title">O curinga *</h2>
-  <div class="split c2">
-    <div class="vsplit">
-      <div class="callouts">
-        <div class="an step"><span class="an-code">*</span><svg class="ar" aria-hidden="true"><use href="#i-ar"/></svg><span class="an-def">qualquer coisa</span></div>
-        <div class="an step"><span class="an-code">*.txt</span><svg class="ar" aria-hidden="true"><use href="#i-ar"/></svg><span class="an-def">todos os arquivos que terminam em .txt</span></div>
-        <div class="an step"><span class="an-code">*.jpg</span><svg class="ar" aria-hidden="true"><use href="#i-ar"/></svg><span class="an-def">todas as fotos .jpg</span></div>
-      </div>
-      <p class="caption step" style="font-size:36px">Para cada arquivo .txt da pasta: mostre o nome e o conteúdo.</p>
-    </div>
-    <div class="step">
-      <div class="term">
-        <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">ler.sh</span></div>
-        <pre class="term-body"><span class="sheb">#!/bin/bash</span>
-<span class="kw">for</span> arq <span class="kw">in</span> *.txt; <span class="kw">do</span>
-    echo <span class="str">"=== <span class="vr">$arq</span> ==="</span>
-    cat <span class="str">"<span class="vr">$arq</span>"</span>
-<span class="kw">done</span></pre>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== S40 · Sua vez: for ==================== -->
-<section class="slide" id="s40" data-layout="task" data-timer="12">
-  <div class="badge-task">SUA VEZ<svg aria-hidden="true"><use href="#i-clock"/></svg>12 min</div>
-  <div class="vsplit">
-    <h3 class="desafio">Desafio A (6 min): Semestre</h3>
-    <p style="font-size:38px">Crie <span class="ic">semestre.sh</span> que, com um for, crie as pastas <span class="ic">aula1</span>, <span class="ic">aula2</span>, <span class="ic">aula3</span> e <span class="ic">aula4</span> dentro de uma pasta <span class="ic">semestre</span>.</p>
-    <h3 class="desafio">Desafio B (6 min): Cartas</h3>
-    <p style="font-size:38px">Crie 3 arquivos <span class="ic">.txt</span> e escreva <span class="ic">mostrar.sh</span>, que exiba o nome e o conteúdo de cada um com for e cat.</p>
-  </div>
-</section>
-
-<!-- ==================== S41 · Módulo 7 ==================== -->
-<section class="slide" id="s41" data-layout="section">
-  <div class="sec">
-    <p class="sec-prompt"><span class="p">$</span> cd modulo-7</p>
-    <div class="sec-num" aria-hidden="true">M7</div>
-    <h2 class="sec-title">Exercício final: organizador de pasta</h2>
-    <span class="sec-dur">30 min</span>
-  </div>
-</section>
-
-<!-- ==================== S42 · A situação ==================== -->
-<section class="slide" id="s42" data-layout="bullets">
-  <h2 class="slide-title">A situação</h2>
-  <ul class="bl">
-    <li class="step">Sua pasta de trabalhos está uma bagunça: fotos, PDFs, textos e códigos misturados.</li>
-    <li class="step">Em vez de arrumar tudo à mão, escreva um script que organiza qualquer pasta que você indicar.</li>
-  </ul>
-</section>
-
-<!-- ==================== S43 · O enunciado ==================== -->
-<section class="slide" id="s43" data-layout="task" data-timer="24">
-  <div class="badge-task">SUA VEZ<svg aria-hidden="true"><use href="#i-clock"/></svg>24 min</div>
-  <h2 class="slide-title">Escreva organizar.sh. Ele recebe o nome de uma pasta ($1) e:</h2>
-  <ol class="num sm">
-    <li>Cria dentro dela as pastas <span class="ic">imagens</span>, <span class="ic">documentos</span> e <span class="ic">codigos</span> (use um for).</li>
-    <li>Move os arquivos <span class="ic">.jpg</span> e <span class="ic">.png</span> para imagens.</li>
-    <li>Move os arquivos <span class="ic">.pdf</span> e <span class="ic">.txt</span> para documentos.</li>
-    <li>Move os arquivos <span class="ic">.py</span> para codigos.</li>
-    <li>Gera <span class="ic">relatorio.txt</span> listando o conteúdo de cada pasta e mostra o relatório na tela com cat.</li>
-  </ol>
-  <p class="mono-line">Antes: <span class="ic">./preparar_bagunca.sh</span> cria a pasta bagunca.</p>
-  <p class="mono-line">Depois: <span class="ic">./organizar.sh bagunca</span></p>
-</section>
-
-<!-- ==================== S44 · Esqueleto para preencher ==================== -->
-<section class="slide" id="s44" data-layout="terminal">
-  <h2 class="slide-title">Preencha as lacunas ___</h2>
-  <div class="term t28">
-    <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">organizar.sh</span></div>
-    <pre class="term-body"><span class="sheb">#!/bin/bash</span>
-<span class="cmt"># organizar.sh</span>
-pasta=<span class="blank">"___"</span>                      <span class="cmt"># guarde aqui o primeiro argumento</span>
-
-<span class="cmt"># Criar as pastas de destino</span>
-<span class="kw">for</span> nome <span class="kw">in</span> imagens documentos <span class="blank">___</span>; <span class="kw">do</span>
-    mkdir -p <span class="str">"<span class="vr">$pasta</span>/<span class="blank">___</span>"</span>
-<span class="kw">done</span>
-
-<span class="cmt"># Mover os arquivos (use o curinga *)</span>
-mv <span class="str">"<span class="vr">$pasta</span>"</span>/*.jpg <span class="str">"<span class="vr">$pasta</span>"</span>/*.png <span class="str">"<span class="vr">$pasta</span>/imagens/"</span>
-mv <span class="str">"<span class="vr">$pasta</span>"</span>/*.pdf <span class="str">"<span class="vr">$pasta</span>"</span>/<span class="blank">___</span> <span class="str">"<span class="vr">$pasta</span>/documentos/"</span>
-mv <span class="str">"<span class="vr">$pasta</span>"</span>/<span class="blank">___</span> <span class="str">"<span class="vr">$pasta</span>/codigos/"</span>
-
-<span class="cmt"># Relatório</span>
-echo <span class="str">"Relatório de organização"</span> &gt; relatorio.txt
-echo <span class="str">"--- Imagens ---"</span> &gt;&gt; relatorio.txt
-ls <span class="str">"<span class="vr">$pasta</span>/imagens"</span> &gt;&gt; relatorio.txt
-<span class="cmt"># ... repita para documentos e codigos ...</span>
-
-cat relatorio.txt</pre>
-  </div>
-</section>
-
-<!-- ==================== S45 · Dicas ==================== -->
-<section class="slide" id="s45" data-layout="bullets" data-notes="Para repetir o teste, rodar `./preparar_bagunca.sh` de novo.">
-  <h2 class="slide-title">Travou? Quatro dicas</h2>
-  <ol class="num">
-    <li class="step">Comece só pelo for que cria as pastas. Rode e confira com <span class="ic">ls bagunca</span>.</li>
-    <li class="step">Acrescente uma linha <span class="ic">mv</span> por vez e teste.</li>
-    <li class="step">Use <span class="ic">echo "$pasta"</span> para conferir o valor da variável.</li>
-    <li class="step">Deu erro? Aperte <span class="key">E</span> para abrir o cartão de erros.</li>
-  </ol>
-</section>
-
-<!-- ==================== S46 · Solução comentada ==================== -->
-<section class="slide" id="s46" data-layout="terminal" data-notes="Só avançar para este slide na correção (últimos 3 min do M7).">
-  <h2 class="slide-title">Solução</h2>
-  <div class="term grow t32">
-    <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">organizar.sh</span></div>
-    <pre class="term-body"><span class="sheb">#!/bin/bash</span>
-<span class="cmt"># organizar.sh: organiza os arquivos de uma pasta por tipo</span>
-<span class="cmt"># Uso: ./organizar.sh &lt;pasta&gt;</span>
-
-pasta=<span class="str">"<span class="vr">$1</span>"</span>          <span class="cmt"># $1 é o primeiro argumento informado ao rodar o script</span>
-
-<span class="cmt"># Cria as pastas de destino, uma por vez, com o for</span>
-<span class="cmt"># (-p evita erro se a pasta já existir)</span>
-<span class="kw">for</span> nome <span class="kw">in</span> imagens documentos codigos; <span class="kw">do</span>
-    mkdir -p <span class="str">"<span class="vr">$pasta</span>/<span class="vr">$nome</span>"</span>
-<span class="kw">done</span>
-
-<span class="cmt"># Move os arquivos usando curingas</span>
-mv <span class="str">"<span class="vr">$pasta</span>"</span>/*.jpg <span class="str">"<span class="vr">$pasta</span>"</span>/*.png <span class="str">"<span class="vr">$pasta</span>/imagens/"</span>
-mv <span class="str">"<span class="vr">$pasta</span>"</span>/*.pdf <span class="str">"<span class="vr">$pasta</span>"</span>/*.txt <span class="str">"<span class="vr">$pasta</span>/documentos/"</span>
-mv <span class="str">"<span class="vr">$pasta</span>"</span>/*.py <span class="str">"<span class="vr">$pasta</span>/codigos/"</span>
-
-<span class="cmt"># Gera o relatório: &gt; cria o arquivo; &gt;&gt; acrescenta</span>
-echo <span class="str">"Relatório de organização"</span> &gt; relatorio.txt
-echo <span class="str">"--- Imagens ---"</span> &gt;&gt; relatorio.txt
-ls <span class="str">"<span class="vr">$pasta</span>/imagens"</span> &gt;&gt; relatorio.txt
-echo <span class="str">"--- Documentos ---"</span> &gt;&gt; relatorio.txt
-ls <span class="str">"<span class="vr">$pasta</span>/documentos"</span> &gt;&gt; relatorio.txt
-echo <span class="str">"--- Códigos ---"</span> &gt;&gt; relatorio.txt
-ls <span class="str">"<span class="vr">$pasta</span>/codigos"</span> &gt;&gt; relatorio.txt
-
-echo <span class="str">"Pasta '<span class="vr">$pasta</span>' organizada!"</span>
-cat relatorio.txt</pre>
-  </div>
-</section>
-
-<!-- ==================== S47 · Resultado esperado ==================== -->
-<section class="slide" id="s47" data-layout="terminal">
-  <h2 class="slide-title">Resultado esperado</h2>
-  <div class="term t34">
-    <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">terminal</span></div>
-    <pre class="term-body"><span class="p">$</span> ./organizar.sh bagunca
-<span class="out">Pasta 'bagunca' organizada!</span>
-<span class="out">Relatório de organização</span>
-<span class="out">--- Imagens ---</span>
-<span class="out">foto1.jpg</span>
-<span class="out">foto2.png</span>
-<span class="out">selfie.jpg</span>
-<span class="out">--- Documentos ---</span>
-<span class="out">notas.txt</span>
-<span class="out">resumo.pdf</span>
-<span class="out">trabalho.pdf</span>
-<span class="out">--- Códigos ---</span>
-<span class="out">programa.py</span></pre>
-  </div>
-</section>
-
-<!-- ==================== S48 · O que você aprendeu ==================== -->
-<section class="slide" id="s48" data-layout="cards">
+<!-- ==================== S26 · O que você aprendeu ==================== -->
+<section class="slide" id="s26" data-layout="cards">
   <h2 class="slide-title">O que você aprendeu hoje</h2>
   <div class="cards c2">
     <div class="card step"><h3>Comandos</h3><p class="mono" style="font-size:36px;line-height:1.7">pwd · ls · cd · mkdir · touch · mv · rm · echo · cat · chmod</p></div>
-    <div class="card step"><h3>Conceitos</h3><p class="mono" style="font-size:36px;line-height:1.7">&gt; e &gt;&gt; · variável · <span class="vr">$1</span> · <span class="kw">for</span></p></div>
+    <div class="card step"><h3>Conceitos</h3><p class="mono" style="font-size:36px;line-height:1.7">&gt; e &gt;&gt; · variável · <span class="vr">$1</span> e <span class="vr">$2</span> · script</p></div>
   </div>
   <p class="highlight step">Você saiu da tela preta para a automação.</p>
 </section>
 
-<!-- ==================== S49 · Próximos passos ==================== -->
-<section class="slide" id="s49" data-layout="bullets">
-  <h2 class="slide-title">Para continuar</h2>
-  <ul class="bl">
-    <li class="step"><span class="ic">if</span>: tomar decisões nos scripts</li>
-    <li class="step"><span class="ic">cp</span>: copiar arquivos</li>
-    <li class="step"><span class="ic">grep</span>: procurar texto</li>
-    <li class="step"><span class="ic">|</span>: ligar um comando ao outro (pipe)</li>
-    <li class="step"><span class="ic">man</span>: o manual de cada comando</li>
-  </ul>
-  <p class="footnote-muted">Guia de referência: diegomariano.com/shell-script-um-guia-basico</p>
-</section>
-
-<!-- ==================== S50 · Feedback ==================== -->
-<section class="slide" id="s50" data-layout="bullets">
-  <h2 class="slide-title">Conta pra gente!</h2>
-  <ul class="bl">
-    <li>O que foi mais útil?</li>
-    <li>Onde você travou?</li>
-    <li>O que faltou?</li>
-  </ul>
-</section>
-
-<!-- ==================== S51 · Encerramento ==================== -->
-<section class="slide" id="s51" data-layout="closing">
+<!-- ==================== S27 · Encerramento ==================== -->
+<section class="slide" id="s27" data-layout="closing">
   <div class="closing">
     <h2 class="step">Obrigado!</h2>
     <p class="closing-sub step">Abra o terminal todos os dias. A prática é o que fixa.</p>
@@ -840,70 +444,10 @@ cat relatorio.txt</pre>
   <div class="closing-foot">Daniel · Gustavo · Silvio  ·  Sistemas de Informação · UECE</div>
 </section>
 
-<!-- ==================== A1 · Apêndice: Cartão de erros (tecla E) ==================== -->
-<section class="slide" id="a1" data-layout="table">
-  <h2 class="slide-title">Cartão de erros comuns</h2>
-  <div class="tbl-wrap">
-    <table class="tbl-sm">
-      <thead><tr><th>O que apareceu</th><th>Provável causa</th><th>O que fazer</th></tr></thead>
-      <tbody>
-        <tr><td>command not found</td><td>Comando digitado errado, ou espaço ao redor do = (nome = "Ana")</td><td>Conferir a digitação; variável sem espaços: <span class="ic">nome="Ana"</span></td></tr>
-        <tr><td>No such file or directory</td><td>Nome ou caminho errado</td><td><span class="ic">pwd</span> e <span class="ic">ls</span> para ver onde está e como o arquivo se chama</td></tr>
-        <tr><td>Permission denied</td><td>Falta permissão ao rodar o script</td><td><span class="ic">chmod +x script.sh</span></td></tr>
-        <tr><td>unexpected end of file / syntax error</td><td>Falta fechar um bloco (ex.: <span class="ic">done</span>) ou as aspas</td><td>Conferir <span class="ic">for...do...done</span> e as aspas</td></tr>
-        <tr><td>O script não mudou</td><td>Arquivo não foi salvo no nano</td><td><span class="key">Ctrl</span>+<span class="key">O</span>, <span class="key">Enter</span>, <span class="key">Ctrl</span>+<span class="key">X</span></td></tr>
-        <tr><td>O terminal "travou"</td><td>Está esperando algo</td><td>Pressione <span class="key">Ctrl</span>+<span class="key">C</span></td></tr>
-        <tr><td>Nome com espaço dá erro</td><td>O shell separa em dois nomes</td><td>Evitar espaços ou usar aspas: <span class="ic">"meu arquivo"</span></td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="footnote-muted">Aperte <span class="key">B</span> para voltar ao slide anterior.</p>
-</section>
-
-<!-- ==================== A2 · Apêndice: Cola de comandos (tecla C) — parte 1 ==================== -->
-<section class="slide" id="a2" data-layout="table">
-  <h2 class="slide-title">Cola de comandos</h2>
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>Comando</th><th>O que faz</th><th>Exemplo</th></tr></thead>
-      <tbody>
-        <tr><td>pwd</td><td>Mostra onde estou</td><td>pwd</td></tr>
-        <tr><td>ls</td><td>Lista o conteúdo da pasta</td><td>ls</td></tr>
-        <tr><td>cd pasta</td><td>Entra na pasta</td><td>cd faculdade</td></tr>
-        <tr><td>cd .. / cd ~</td><td>Sobe um nível / vai para a pasta pessoal</td><td>cd ..</td></tr>
-        <tr><td>mkdir nome</td><td>Cria pasta</td><td>mkdir projeto</td></tr>
-        <tr><td>touch nome</td><td>Cria arquivo vazio</td><td>touch ideia.txt</td></tr>
-        <tr><td>mv origem destino</td><td>Move ou renomeia</td><td>mv a.txt docs/</td></tr>
-        <tr><td>rm arquivo</td><td>Apaga arquivo (sem lixeira!)</td><td>rm a.txt</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- ==================== A3 · Apêndice: Cola de comandos — parte 2 ==================== -->
-<section class="slide" id="a3" data-layout="table">
-  <h2 class="slide-title">Cola de comandos</h2>
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>Comando</th><th>O que faz</th><th>Exemplo</th></tr></thead>
-      <tbody>
-        <tr><td>echo "texto"</td><td>Escreve na tela</td><td>echo "Olá"</td></tr>
-        <tr><td>echo "texto" &gt; arq</td><td>Salva no arquivo (sobrescreve)</td><td>echo "oi" &gt; a.txt</td></tr>
-        <tr><td>echo "texto" &gt;&gt; arq</td><td>Acrescenta ao arquivo</td><td>echo "mais" &gt;&gt; a.txt</td></tr>
-        <tr><td>cat arquivo</td><td>Mostra o conteúdo</td><td>cat a.txt</td></tr>
-        <tr><td>chmod +x script.sh</td><td>Dá permissão de execução</td><td>chmod +x ola.sh</td></tr>
-        <tr><td>./script.sh</td><td>Executa o script</td><td>./ola.sh Maria</td></tr>
-        <tr><td>Tab / <svg class="ar ar-u" aria-hidden="true"><use href="#i-ar"/></svg></td><td>Completa nomes / repete comando</td><td>—</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="mono-line" style="font-size:30px;background:var(--bg-panel);border:2px solid var(--line);border-radius:12px;padding:14px 24px"><span class="sheb">#!/bin/bash</span> na 1ª linha · variável: nome=<span class="str">"valor"</span> (sem espaços) · uso: <span class="vr">$nome</span> · argumentos: <span class="vr">$1</span>, <span class="vr">$2</span> · repetição: <span class="kw">for</span> x <span class="kw">in</span> a b c; <span class="kw">do</span> ... <span class="kw">done</span></p>
-</section>
-
   </main>
 
   <div class="deck-footer">Terminal Linux e Shell Script · UECE</div>
-  <div id="counter" role="status">01 / 54</div>
+  <div id="counter" role="status">01 / 27</div>
   <div id="timer" hidden>00:00</div>
   <div id="progress"></div>
 
@@ -923,8 +467,6 @@ cat relatorio.txt</pre>
       <div class="help-row"><span class="help-keys">Shift + →</span><span>mostrar todos os passos do slide</span></div>
       <div class="help-row"><span class="help-keys">← · PageUp</span><span>voltar (desfaz o último passo)</span></div>
       <div class="help-row"><span class="help-keys">Home · End</span><span>primeiro / último slide</span></div>
-      <div class="help-row"><span class="help-keys">T · R</span><span>cronômetro: iniciar/pausar · reiniciar</span></div>
-      <div class="help-row"><span class="help-keys">E · C · B</span><span>cartão de erros · cola de comandos · voltar</span></div>
       <div class="help-row"><span class="help-keys">F</span><span>tela cheia</span></div>
       <div class="help-row"><span class="help-keys">N</span><span>notas do instrutor</span></div>
       <div class="help-row"><span class="help-keys">O</span><span>visão geral (grade de slides)</span></div>

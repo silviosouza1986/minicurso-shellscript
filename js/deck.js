@@ -17,7 +17,6 @@
   var helpEl = document.getElementById('help');
 
   var cur = -1;
-  var origin = -1; // slide de onde o usuário saiu com E ou C (tecla B volta)
   var state = slides.map(function (sl) {
     return { steps: Array.prototype.slice.call(sl.querySelectorAll('.step')), shown: 0, all: false };
   });
@@ -89,17 +88,6 @@
     var i = hashIndex();
     if (i >= 0 && i !== cur) show(i, true);
   });
-
-  function jumpToId(id) {
-    for (var i = 0; i < N; i++) {
-      if (slides[i].id === id) {
-        if (i !== cur) origin = cur;
-        show(i, true);
-        return true;
-      }
-    }
-    return false;
-  }
 
   /* ---------- Cronômetro regressivo (T pausa/retoma, R reinicia) ---------- */
   var T = null;
@@ -173,7 +161,7 @@
       inner.appendChild(clone);
       b.appendChild(num);
       b.appendChild(inner);
-      function go() { ovEl.hidden = true; origin = -1; show(i, true); }
+      function go() { ovEl.hidden = true; show(i, true); }
       b.addEventListener('click', go);
       b.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
@@ -236,16 +224,11 @@
         e.preventDefault();
         prev();
         break;
-      case 'Home': e.preventDefault(); origin = -1; show(0, true); break;
-      case 'End': e.preventDefault(); origin = -1; show(N - 1, true); break;
+      case 'Home': e.preventDefault(); show(0, true); break;
+      case 'End': e.preventDefault(); show(N - 1, true); break;
       case 'f': case 'F': toggleFullscreen(); break;
       case 't': case 'T': toggleTimer(); break;
       case 'r': case 'R': resetTimer(); break;
-      case 'e': case 'E': jumpToId('a1'); break;
-      case 'c': case 'C': jumpToId('a2'); break;
-      case 'b': case 'B':
-        if (origin >= 0) { var o = origin; origin = -1; show(o, true); }
-        break;
     }
   });
 
