@@ -33,7 +33,7 @@ Abrir `http://localhost:3000` (ou `:8000`). Não há build: basta servir a pasta
 
 **Opção B — via CLI:** na pasta do projeto, `npx vercel` (teste) e `npx vercel --prod` (produção).
 
-**URL pública:** `[COLE AQUI A URL DO DEPLOY]`
+**URL pública:** https://minicurso-shellscript-vercel.vercel.app
 
 ## Uso durante a aula
 
