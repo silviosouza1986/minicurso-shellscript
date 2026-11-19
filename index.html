@@ -18,7 +18,7 @@
   <defs>
     <symbol id="i-ar" viewBox="0 0 24 24"><path d="M5 10.8h10.4L11 6.4 12.4 5 20 12l-7.6 7-1.4-1.4 4.4-4.4H5z"/></symbol>
     <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.5-13H11v6l5.2 3.1.8-1.3-4.5-2.7V7z"/></symbol>
-    <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 2 1 21h22L12 2zm1 14h-2v2h2v-2zm0-7h-2v5h2V9z"/></symbol>
+    <symbol id="i-warn" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2 1 21h22L12 2zm1 14h-2v2h2v-2zm0-7h-2v5h2V9z"/></symbol>
   </defs>
 </svg>
 
@@ -149,9 +149,9 @@
   <div class="split w62">
     <div class="term">
       <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">árvore de pastas</span></div>
-      <pre class="term-body"><span class="dir">/</span>                      <span class="cmt"><svg class="ar ar-l" aria-hidden="true"><use href="#i-ar"/></svg> a raiz: o início de tudo</span>
+      <pre class="term-body"><span class="dir">/</span>
 ├── <span class="dir">home/</span>
-│   └── <span class="dir">aluno/</span>         <span class="cmt"><svg class="ar ar-l" aria-hidden="true"><use href="#i-ar"/></svg> ~ (sua pasta pessoal)</span>
+│   └── <span class="dir">aluno/</span>
 │       ├── <span class="dir">Documentos/</span>
 │       └── <span class="dir">faculdade/</span>
 └── <span class="dir">usr/</span></pre>
@@ -319,7 +319,7 @@
 <section class="slide" id="s21" data-layout="split">
   <h2 class="slide-title">ola.sh</h2>
   <div class="split w62">
-    <div class="term">
+    <div class="term t32">
       <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">ola.sh</span></div>
       <pre class="term-body"><span class="sheb">#!/bin/bash</span>
 <span class="cmt"># Meu primeiro script</span>
@@ -385,9 +385,9 @@ echo <span class="str">"Olá, <span class="vr">$nome</span>"</span>
 <!-- ==================== S24 · Argumentos ==================== -->
 <section class="slide" id="s24" data-layout="split">
   <h2 class="slide-title">Argumentos: $1 e $2</h2>
-  <div class="split c2">
+  <div class="split" style="grid-template-columns:1fr 1.5fr;gap:40px">
     <div class="step">
-      <div class="term">
+      <div class="term t28">
         <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">saudacao.sh</span></div>
         <pre class="term-body"><span class="sheb">#!/bin/bash</span>
 nome=<span class="str">"<span class="vr">$1</span>"</span>
@@ -398,7 +398,7 @@ echo <span class="str">"Bem-vindo(a) a <span class="vr">$curso</span>."</span></
     </div>
     <div class="vsplit">
       <div class="step">
-        <div class="term">
+        <div class="term t28">
           <div class="term-bar"><span class="dot r"></span><span class="dot a"></span><span class="dot g"></span><span class="term-title">terminal</span></div>
           <pre class="term-body"><span class="p">$</span> ./saudacao.sh Maria <span class="str">"Sistemas de Informação"</span>
 <span class="out">Olá, Maria!</span>
